@@ -5,21 +5,21 @@
 class Influo < Formula
   desc "TUI client for agent.influo-ai.com — chat with brand agents from your terminal"
   homepage "https://github.com/yomomo-ai/homebrew-tap"
-  version "0.1.18"
+  version "0.1.19"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.18/influo_darwin_amd64.tar.gz"
-      sha256 "e7957d24fa12e20cbaebaff0e5f013eb63a9b5d94f5ddb305e89f79543666257"
+      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.19/influo_darwin_amd64.tar.gz"
+      sha256 "9eabb9ec744fc7011d8127e482d9110ce6715bd68b142acb2c1d58800987deb1"
 
       define_method(:install) do
         bin.install "influo"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.18/influo_darwin_arm64.tar.gz"
-      sha256 "03d3abbb1e0d2a80b2c55fe258ba1ad56874f6a4424f40ef818a4848120eb807"
+      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.19/influo_darwin_arm64.tar.gz"
+      sha256 "5b80ada5de8bfc821d31b4066bc9684b08882c0c76ea8a98bde4fefedc149f4e"
 
       define_method(:install) do
         bin.install "influo"
@@ -29,15 +29,15 @@ class Influo < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.18/influo_linux_amd64.tar.gz"
-      sha256 "5801ed8b6b98eb1a624d2831da6df56dccbee33df0edd2e985030a421ca62945"
+      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.19/influo_linux_amd64.tar.gz"
+      sha256 "f32a8d2bf3574bbf2abc0ddd38e1f631036c4afa069dc95e30eb7ad49b598f13"
       define_method(:install) do
         bin.install "influo"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.18/influo_linux_arm64.tar.gz"
-      sha256 "250600b1d183ffeb1ade237d3b7b29bcb5cbb80be73fc3a6193140aff318a15f"
+      url "https://github.com/yomomo-ai/homebrew-tap/releases/download/v0.1.19/influo_linux_arm64.tar.gz"
+      sha256 "372633db1bc735f22f4b10a782b67fe7e9ce514d87fd12dcce050b938e2bbc92"
       define_method(:install) do
         bin.install "influo"
       end
